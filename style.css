@@ -1,0 +1,661 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bod{
+    width: 1525px;
+    height: 600px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    .bo{
+        /* background-color: brown; */
+        width: 1400px;
+        padding-top: 10px;
+        .back_lux{
+            width: 100%;
+            height: 181px;
+            /* background-color: aqua; */
+            justify-content: center;
+            display: flex;
+            position: relative;
+            z-index: 1;
+            bottom: 70px;
+            padding-bottom: 60px;
+            p{
+                font-size: 188px;
+                letter-spacing: 80px;
+                color: rgba(128, 128, 128, 0.233);
+                position: relative;
+                z-index: 0;
+            }
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            .brand_name{
+                span{
+                    color: rgb(185, 5, 5);
+                }
+            }
+            ul{
+                display: flex;
+                gap: 30px;
+                li{
+                    list-style: none;
+                    font-size: 13px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .nav_about{
+            /* background-color: rgb(48, 165, 42); */
+            width: 100%;
+            height: 360px;
+            margin-top: 90px;
+            display: flex;
+            justify-content: space-between;
+            .nav_para{
+                width: 40%;
+                label{
+                    font-size: 46px;
+                    font-weight: 600;
+                    span{
+                        color: rgb(197, 1, 1);
+                    }
+                }
+                p{
+                    font-size: 13px;
+                    width: 100%;
+                    font-style: oblique;
+                    line-height: 20px;
+                    padding-top: 35px;
+                }
+                .nav_but{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    gap: 22px;
+                    width: 100%;
+                    /* background-color: blueviolet; */
+                    button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(223, 0, 0);
+                        color: white;
+                        border: none;
+                        font-size: 12px;
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    .nav_video{
+                        margin-top: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 150px;
+                        height: 35px;
+                        /* background-color: bisque; */
+                        p{
+                            padding-left: 8px;
+                            /* background-color: black;
+                            height: 20px; */
+                            padding-bottom: 32px;
+                        }
+                        .nav_vid{
+                            border: 1px solid rgb(241, 0, 0);
+                            border-radius: 100px;
+                            height: 30px;
+                            img{
+                                margin: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav_car{
+                width:60%;
+                height:100%;
+                /* background-color: aqua; */
+                position: relative;
+                z-index: 23;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .search_bar{
+            background-color: white;
+            width: 100%;
+            height: 110px;
+            border-radius: 5px;
+            position: relative;
+            z-index: 2;
+            bottom: 120px;
+            color:black;
+            box-shadow: 2px 2px 7px gray;
+            overflow: hidden;
+            .value{
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+            .search_box{
+                padding: 20px;
+                display: flex;
+                gap: 30px;
+                input{
+                    padding: 8px;
+                    width: 280px;
+                    color:gray;
+                    border: 1px solid rgba(128, 128, 128, 0.349);
+                    border-radius: 5px;
+                }
+                select{
+                    padding: 9px;
+                    width: 280px;
+                    color:gray;
+                    border: 1px solid rgba(128, 128, 128, 0.349);
+                    border-radius: 5px;
+                }
+                button{
+                    padding: 8px;
+                    width: 110px;
+                    background-color: rgb(235, 4, 4);
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.car_bod{
+    /* background-color: aqua; */
+    width: 1525px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    .car_bo{
+        width: 1400px;
+        /* background-color: antiquewhite; */
+        height: 100%;
+        padding-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        .car_photo{
+            width: 45%;
+            p{
+                font-size: 25px;
+            }
+            #para{
+                font-size: 13px;
+                color: gray;
+                padding-top: 18px;
+                line-height: 15px;
+            }
+            .car_phot{
+                width: 100%;
+                height: 400px;
+                margin-top: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .car_box{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2,260px);
+            grid-template-rows: repeat(2,240px);
+            overflow: hidden;
+            padding-left: 150px;
+            .car_boxa{
+                width: 250px;
+                height: 230px;
+                background-color:black;
+                border-radius: 5px;
+                color: white;
+                margin-top: 40px;
+                .logo_back{
+                    width: 35px;
+                    height: 35px;
+                    background-color: white;
+                    border-radius: 100px;
+                    position: relative;
+                    left: 12px;
+                    top: 12px;
+                    img{
+                        padding: 3px;
+                    }
+                }
+                .box_about{
+                    /* background-color: antiquewhite; */
+                    width: 260px;
+                    height: 90px;
+                    #box_cer{
+                        font-size: 23px;
+                        margin-top: 35px;
+                        padding-left: 10px;
+                    }
+                    p{
+                        font-size: 13px;
+                        margin-top: 18px;
+                        padding-left: 10px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+.brands{
+    width: 1525px;
+    height: 150px;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    .brand_box{
+        width:1400px;
+        height: 100%;
+        padding-left:35px;
+        /* background-color: brown; */
+        .brand_image{
+            width: 250px;
+            height: 140px;
+            /* background-color: aqua; */
+            border-radius: 5px;
+            border: 1px dotted gray;
+            margin: 20px;
+            box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.349) ;
+            img{
+                width: 90%;
+                height: 90%;
+                margin-top: 5px;
+                margin-left: 5px;
+
+            }
+        }
+    }
+}
+.lux_brand{
+    width: 1525px;
+    height: 60px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* align-items: center; */
+    .lux_bra{
+        width:1400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button{
+            padding: 8px;
+            width: 80px;
+            border-radius: 3px;
+            border: 1px solid gray;
+            color: rgb(202, 4, 4);
+            background-color: white;
+        }
+    }
+}
+.brands_con{
+    width: 1525px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .brand_container{
+        width:1400px;
+        height: 100%;
+        background-color:rgb(0, 0, 0);
+        color: white;
+        border-radius: 10px;
+        margin-top: 5px;
+        .boxes{
+            padding-left: 30px;
+            display: flex;
+            z-index: 2;
+            ul{
+                width: 25%;
+                /* background-color: blueviolet; */
+                padding-left: 40px;
+                li{
+                    list-style: none;
+                    font-size: 25px;
+                    width:190px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 14px;
+                    /* background-color: antiquewhite; */
+                }
+            }
+            .box_car{
+                width: 75%;
+                height: 465px;
+                /* background-color: aqua; */
+                margin-top: 20px;
+                .box_car_photo{
+                    width: 90%;
+                    height: 350px;
+                    background-color: brown;
+                    border-radius: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+                h3{
+                    padding-top: 20px;
+                }
+                p{
+                    padding-top: 15px;
+                    font-size: 14px;
+                    width: 550px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+.brands_con li:hover{
+    border: 1px dotted rgb(255, 29, 29);
+    color:rgb(185, 5, 5) ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.car_specification{
+    width: 1525px;
+    height: 380px;
+    background-color:black;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    .car_spec{
+        width: 1400px;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        .car_spec_del{
+            width: 40%;
+            height: 100%;
+            /* background-color: aqua; */
+            padding: 50px;
+            h2{
+                width: 300px;
+                height: 70px;
+                /* background-color: brown; */
+                line-height: 30px;
+            }
+            p{
+                width: 350px;
+                height: 60px;
+                /* background-color: brown; */
+                display: flex;
+                align-items: center;
+                font-size: 11px;
+            }
+            ul{
+                li{
+                    padding-top: 10px;
+                    list-style: none;
+                    font-size: 14px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                padding: 8px;
+                background-color: rgb(255, 29, 29);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                width: 100px;
+            }
+        }
+        .car_spec_photo{
+            width: 55%;
+            height: 100%;
+            /* background-color: antiquewhite; */
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.card_container{
+    width: 1525px;
+    height: 600px;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    .card_con{
+        width: 1400px;
+        height: 80%;
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card_brand{
+            width: 680px;
+            height: 50px;
+            /* background-color: aqua; */
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            .card_bra{
+                width: 120px;
+                height: 40px;
+                /* background-color: blueviolet; */
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                border: 1px solid gray;
+                gap: 10px;
+            }
+        }
+        .cards{
+            width: 800px;
+            height: 70%;
+            /* background-color: beige; */
+            margin-top: 40px;
+            display: flex;
+            .card{
+                width: 250px;
+                height: 90%;
+                /* background-color: aquamarine; */
+                margin: 15px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.184);
+                .fb_icon{
+                    width: 100%;
+                    height: 35px;
+                    display: flex;
+                    justify-content: end;
+                    padding-right: 5px;
+                    padding-top: 5px;
+                    img{
+                        height: 25px;
+                    }
+                }
+            }
+            .card_img{
+                width: 90%;
+                height: 50%;
+                background-color: gray;
+                margin-left: 11px;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .card_about{
+            width: 210px;
+            height:80px;
+            /* background-color: brown; */
+            margin-left: 12px;
+            margin-top: 15px;
+            p{
+                font-size: 11px;
+                margin-top: 9px;
+            }
+            .card_price{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                align-items: center;
+                button{
+                    padding: 7px;
+                    width: 90px;
+                    height: 30px;
+                    color: white;
+                    background-color: rgb(255, 29, 29);
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 1525px;
+    height: 430px;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    justify-content: center;
+    .foot{
+        width: 1400px;
+        height: 100%;
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin-top: 30px;
+            color: white;
+        }
+        .foot_search{
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            input{
+                width: 250px;
+                height: 35px;
+                border-radius: 5px;
+                border: none;
+            }
+            input::placeholder{
+                position: relative;
+                left: 10px;
+            }
+            button{
+                width: 100px;
+                height: 35px;
+                border-radius: 5px;
+                color: white;
+                background-color: rgb(255, 29, 29) ;
+                border: none;
+            }
+        }
+        .foot_about{
+            width:1400px;
+            height: 220px;
+            /* background-color: bisque; */
+            display: flex;
+            margin-top: 70px;
+            .foot_box{
+                width: 400px;
+                height: 100%;
+                /* background-color: aqua; */
+                h3{
+                    color: white;
+                    span{
+                        color:rgb(255, 29, 29) ;
+                    }
+                }
+                p{
+                    color: gray;
+                    margin-top: 20px;
+                    font-size: 13px;
+                    width: 250px;
+                    line-height: 18px;
+                }
+                .foot_social{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 20px;
+                    .foot_soc{
+                        border: 1px solid white;
+                        border-radius: 100px;
+                        padding: 2px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .foot_list_box{
+                width: 340px;
+                height: 100%;
+                /* background-color: blue; */
+                p{
+                    color: white;
+                }
+                ul{
+                    margin-top: 20px;
+                    li{
+                        margin-top: 18px;
+                        font-size: 14px;
+                        color: gray;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+        .hor_line{
+            width: 100%;
+            height: 1px;
+            background-color: gray;
+            margin-top: 19px;
+        }
+        .foot_copy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            /* background-color: blue; */
+            margin-top: 6px;
+            p{
+                color: white;
+                font-size: 14px;
+                span{
+                    color:rgb(255, 29, 29);
+                }
+            }
+        }
+    }
+}
